@@ -1,0 +1,69 @@
+---
+title: "Tema6"
+author: "julio"
+date: "2023-03-13"
+output:
+  pdf_document:
+    latex_engine: xelatex
+  html_document:
+    df_print: paged
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+### Ejercicio 1 Mardawn class 
+semilla es un generdor aleatorio de numeros: set.seed()
+rnorm() esto siginifica reprudicibilidad, y esto genra valorees aletorios. set es para mecionar el numero y rnorm sirve para crear numeros aleatorios. 
+
+ejemplo de los valores seudo aletorio y aleatorio:
+
+```{r}
+set.seed(1)
+rnorm1=rnorm(6)
+rnorm1
+```
+
+
+```{r}
+set.seed(2)
+rnorm2=rnorm(9)
+rnorm2
+
+```
+##Ejecicio 2
+
+```{r}
+set.seed(1)
+x <- rnorm(6) # Creamos una variable normal con 100 valores
+x.test <- shapiro.test(x)
+print(x.test)
+```
+son contrates de hipotesis, hya pruebas paarmeticas y purebas no parametrias con varoles de tipo ordinal.
+
+dentro de las prubas estan las hipotesis, y el nivel de confianza.
+
+
+
+
+
